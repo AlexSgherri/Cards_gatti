@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.cards {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  background-image: linear-gradient(#b6b6b6, #ededed);
+  margin: 9px;
+  width: 350px;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #c6c6c6;
+  border-radius: 15px;
+}
+
+/* Topside */
+
+.card .top-side {
+  height: 55px;
+  width: auto;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  display: flex;
+  background-color: #b5b5b5;
+}
+
+.top-side .profileImg {
+  width: 45px;
+  height: 45px;
+  padding: 5px 8px;
+  border-radius: 50%;
+}
+
+.top-side article {
+  flex: 1;
+  text-align: left;
+}
+
+.top-side article p {
+  font-size: 18px;
+  padding: 8px 0 0px 2px;
+}
+
+.top-side article p.data {
+  padding-top: 0px;
+  font-size: 14px;
+  color: white;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.top-side svg {
+  align-self: right;
+  padding: 15px;
+}
+
+/* Central Image */
+
+.card .content-img {
+  height: 50%;
+
+  /* Icons under image */
+}
+.card .icons-underimg {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.card .icons-underimg svg.bi-bi-chat {
+  padding: 15px 15px 5px 5px;
+}
+
+.icons-underimg svg.bi-bi-heart {
+  padding: 18px 15px 5px 20px;
+}
+
+/* Card Bottom */
+
+.card .post-description {
+  font-family: initial;
+  padding: 5px 8px;
+  text-align: justify;
+  overflow-y: hidden;
+}
+
+/* Responsive */
+
+@media (max-width: 768px ){
+    .cards{
+        flex-wrap: wrap;
+    }
+}
